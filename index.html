@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculate</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style\style.css">
+    <!-- <script src="script.js"></script> -->
+</head>
+
+<body>
+
+    <h1>The Calculator App</h1>
+
+    <div id="calculator" class="calculator">
+
+        <div class="row">
+            <input type="text" id="inputBox" placeholder="0" maxlength="10" onkeypress='return restrictAlphabets(event)'
+                onfocus="this.value = this.value;">
+            <!-- <input type="text" id="inputBox" value="0" '> -->
+        </div>
+
+        <div class="row">
+            <input type="button" class="button operator" id="ac" value="AC">
+            <input type="button" class="button operator" value="DEL">
+            <input type="button" class="button operator" value="%">
+            <input type="button" class="button operator" value="÷">
+            <!-- <input type="button" class="button operator" value="/"> -->
+        </div>
+        <div class="row">
+            <input type="button" class="button" value="7">
+            <input type="button" class="button" value="8">
+            <input type="button" class="button" value="9">
+            <input type="button" class="button operator" value="×">
+            <!-- <input type="button" class="button operator" value="*"> -->
+        </div>
+
+        <div class="row">
+            <input type="button" class="button" value="4">
+            <input type="button" class="button" value="5">
+            <input type="button" class="button" value="6">
+            <input type="button" class="button operator" value="-">
+        </div>
+        <div class="row">
+            <input type="button" class="button" value="1">
+            <input type="button" class="button" value="2">
+            <input type="button" class="button" value="3">
+            <input type="button" class="button operator" value="+">
+        </div>
+        <div class="row">
+            <input type="button" class="button" value="00">
+            <input type="button" class="button" value="0">
+            <input type="button" class="button" value=".">
+            <input type="button" class="button equalBtn" value="=">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
